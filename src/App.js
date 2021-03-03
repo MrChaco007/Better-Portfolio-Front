@@ -7,17 +7,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <Navbar id="Nav" collapseOnSelect expand="lg" >
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
-          <Nav.Link href="#deets">More deets</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <div id="app">
+      <Navbar id="Nav" collapseOnSelect expand="md">
+        <Navbar.Brand>
+          <img
+            id="brand"
+            src="https://res.cloudinary.com/dvnl2s9um/image/upload/v1609191931/Personal_Logo_1_adiipp.png"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#features">INTRO</Nav.Link>
+            <Nav.Link href="#pricing">PROJECTS</Nav.Link>
+            <Nav.Link href="#pricing">WHO+WHAT</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <section id="intro">
+        <h2>
+          Hello, I'm <span id="name">Alexander Chaconas</span>. I'm a full-stack
+          developer.
+        </h2>
+        <button>View Work </button>
+      </section>
+    </div>
   );
 }
 
