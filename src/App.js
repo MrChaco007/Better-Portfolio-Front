@@ -26,7 +26,7 @@ function App() {
       </Navbar>
       <section id="intro">
         <h2>
-          Hello, I'm <span id="name">Alexander Chaconas</span>. I'm a full-stack
+          Hello, I'm <span id="name">Alexander Chaconas</span>. <br/>I'm a full-stack
           developer.
         </h2>
         <button>View Work </button>
