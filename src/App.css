@@ -26,6 +26,7 @@ h2 {
 
 html {
   background-color: #750ff7;
+  scroll-behavior: smooth;
 }
 
 #brand {

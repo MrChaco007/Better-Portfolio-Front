@@ -34,8 +34,8 @@ React.useEffect(()=> getProjects(),[])
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#features">INTRO</Nav.Link>
-            <Nav.Link href="#pricing">PROJECTS</Nav.Link>
+            <Nav.Link href="#intro">INTRO</Nav.Link>
+            <Nav.Link href="#projects">PROJECTS</Nav.Link>
             <Nav.Link href="#pricing">WHO+WHAT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
