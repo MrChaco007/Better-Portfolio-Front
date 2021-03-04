@@ -41,6 +41,7 @@ function App() {
           </div>
         </div>
       </section>
+      <h2 id="projects-header">Projects</h2>
     </div>
   );
 }

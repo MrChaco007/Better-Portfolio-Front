@@ -5,6 +5,11 @@
   font-family: 'Chivo', sans-serif;
 }
 
+h2 {
+  font-size: 35px !important; 
+  color: #EFF8E2; 
+}
+
 #Nav {
   background-color: #750ff7;
 }
@@ -55,14 +60,6 @@ button {
   justify-content: center;
   margin: 40px 20px 0px 20px;
   background-color: #750ff7;
-}
-
-#intro-header{
-  font-size: 35px; 
-}
-
-#intro h2 {
-  color: #EFF8E2;
 }
 
 #name {
@@ -247,4 +244,13 @@ button {
   0%   { opacity: 0; }
   50%  { opacity: .5; }
   100% { opacity: 1; }
+}
+
+
+/* PROJECTS SECTION */
+
+#projects-header {
+  margin: 0 auto; 
+  min-width: 200px; 
+  text-align: center;
 }
