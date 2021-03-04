@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import React, {Component} from 'react'
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -25,11 +25,21 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <section id="intro">
-        <h2>
-          Hello, I'm <span id="name">Alexander Chaconas</span>. <br/>I'm a full-stack
-          developer.
+        <h2 id="intro-header">
+          Hello, I'm <span id="name">Alexander Chaconas</span>. <br />
+          I'm a full-stack developer.
         </h2>
-        <button>View Work </button>
+        <p id="scroll-header">View my work</p>
+        <div class="mouse_scroll">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="m_scroll_arrows unu"></span>
+            <span class="m_scroll_arrows doi"></span>
+            <span class="m_scroll_arrows trei"></span>
+          </div>
+        </div>
       </section>
     </div>
   );
