@@ -33,7 +33,7 @@ html {
 }
 
 button {
-  border: 5px solid #FFA69E; 
+  border: 3px solid #FFA69E; 
   background-color: transparent;
   color: #EFF8E2;
 }
@@ -249,8 +249,41 @@ button {
 
 /* PROJECTS SECTION */
 
+#projects {
+  margin: 0px 15px; 
+}
 #projects-header {
   margin: 100px auto 0px auto; 
   min-width: 200px; 
   text-align: center;
 }
+
+#projects-line{
+  width: 76px; 
+  margin-top: 10px; 
+  height: 10px; 
+  background-color: black;
+}
+
+#projects button {
+  margin: 5px; 
+}
+
+#projects-buttons {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px 10px; 
+}
+
+#project-cards {
+  margin: 30px 10px 0px 10px;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project-image {
+width: 300px;
+}
+

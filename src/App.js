@@ -4,8 +4,24 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ProjectCard from "./components/ProjectCard"
 
 function App() {
+  const [projects, setProjects] = React.useState([])
+  const url = "https://better-portfolio-back.herokuapp.com/projects/";
+  const getProjects = () => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setProjects(data);
+      });
+  }
+
+React.useEffect(()=> getProjects(),[])
+
+
+
+
   return (
     <div id="app">
       <Navbar id="Nav" collapseOnSelect expand="md">
@@ -41,7 +57,25 @@ function App() {
           </div>
         </div>
       </section>
-      <h2 id="projects-header">Projects</h2>
+      <section id="projects">
+        <h2 id="projects-header">Projects</h2>
+        <hr id="projects-line" />
+        <div id="projects-buttons">
+          <button>All</button>
+          <button> React </button>
+          <button> jQuery </button>
+          <button> Ruby</button>
+          <button>Express</button>
+          <button>Rails</button>
+          <button>Django</button>
+          <button>JS</button>
+        </div>
+        <div id="project-cards">
+        {projects.map((project, index) => {
+          return <ProjectCard key ={index} project={project} />
+        })}
+        </div>
+      </section>
     </div>
   );
 }
