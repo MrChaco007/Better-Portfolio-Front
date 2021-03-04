@@ -15,6 +15,10 @@
   font-size: 24px !important; 
 }
 
+.navbar-toggler {
+  border: none !important;
+}
+
 html {
   background-color: #750ff7;
 }
