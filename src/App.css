@@ -250,7 +250,7 @@ button {
 /* PROJECTS SECTION */
 
 #projects-header {
-  margin: 0 auto; 
+  margin: 100px auto 0px auto; 
   min-width: 200px; 
   text-align: center;
 }
