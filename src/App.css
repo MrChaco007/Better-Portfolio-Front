@@ -291,7 +291,7 @@ button {
   position: relative;
   background: black; 
   box-shadow: 0 30px 30px rgba(0,0,0,.5);
-  width: 280px;
+  width: 275px;
   min-height: 175px;
 }
 
@@ -319,16 +319,21 @@ opacity: 0;
 
 #project-header{
   color:white; 
-  padding: 20px 10px 5px 10px; 
+  padding: 25px 20px 5px 20px; 
   text-align: center;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 #project-buttons {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
+  bottom: 1px;
   transition: 0.5s;
   opacity: 0; 
+  margin: 10px; 
+  margin-top: 20px; 
+  font-size: 20px;
 }
 
 #project-box:hover #project-buttons{
