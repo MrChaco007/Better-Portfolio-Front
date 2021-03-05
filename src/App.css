@@ -359,9 +359,23 @@ opacity: 0;
   background-color: #FFA69E;
 }
 
-@media only screen and (max-width:485px){
+@media only screen and (max-width:486px) and (min-width:450px){
   #filter-buttons{
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media only screen and (max-width:449px) and (min-width:400px){
+  #filter-buttons{
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
+
+@media only screen and (max-width:399px) and (min-width:350px){
+  #filter-buttons{
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
