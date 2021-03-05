@@ -8,19 +8,45 @@ import ProjectCard from "./components/ProjectCard"
 
 function App() {
   const [projects, setProjects] = React.useState([])
+  
   const url = "https://better-portfolio-back.herokuapp.com/projects/";
   const getProjects = () => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
         setProjects(data);
+        setFilteredArr(data)
       });
   }
+  const [filteredArr, setFilteredArr] = React.useState([projects]);
 
 React.useEffect(()=> getProjects(),[])
 
 
+const handleAllClick = () => {
+  setFilteredArr(projects)
+}
 
+const handleReactClick = () => {
+  const newArr = projects.filter((project) => {
+   return project.react === true
+  })
+  setFilteredArr(newArr)
+}
+
+const handleJqueryClick = () => {
+  const newArr = projects.filter((project) => {
+    return project.jquery === true
+  })
+  setFilteredArr(newArr);
+}
+
+const handleRubyClick = () => {
+  const newArr = projects.filter((project) => {
+    return project.ruby === true;
+  });
+  setFilteredArr(newArr);
+}
 
   return (
     <div id="app">
@@ -61,17 +87,17 @@ React.useEffect(()=> getProjects(),[])
         <h2 id="projects-header">PROJECTS</h2>
         <hr id="projects-line" />
         <div id="filter-buttons">
-          <button>All</button>
-          <button> React </button>
-          <button> jQuery </button>
-          <button> Ruby</button>
+          <button onClick={handleAllClick}>All</button>
+          <button onClick={handleReactClick}> React </button>
+          <button value="jquery" onClick={handleJqueryClick}> jQuery </button>
+          <button onClick={handleRubyClick}> Ruby</button>
           <button>Express</button>
           <button>Rails</button>
           <button>Django</button>
           <button>JS</button>
         </div>
         <div id="project-cards">
-        {projects.map((project, index) => {
+        {filteredArr.map((project, index) => {
           return <ProjectCard key ={index} project={project} />
         })}
         </div>
