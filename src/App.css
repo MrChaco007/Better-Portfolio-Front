@@ -358,3 +358,10 @@ opacity: 0;
 .project-button:hover {
   background-color: #FFA69E;
 }
+
+@media only screen and (max-width:485px){
+  #filter-buttons{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
