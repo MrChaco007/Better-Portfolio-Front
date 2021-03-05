@@ -38,6 +38,7 @@ button {
   background-color: transparent;
   color: #EFF8E2;
   cursor: pointer;
+  border-radius: 0.25rem; 
 }
 
 
@@ -268,24 +269,32 @@ button {
   background-color: black;
 }
 
-#projects button {
-  margin: 5px; 
-}
-
-#projects-buttons {
+#filter-buttons {
   display: flex; 
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 0px 10px; 
+  margin: 50px auto; 
+  max-width: 518px;
+  padding: 0px 20px; 
 }
+
+#filter-buttons button{
+border-radius: 0.25rem;
+margin: 5px;
+width: 94px;
+}
+
 
 #project-cards {
   margin: 30px 10px 0px 10px;
   display: flex; 
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
+#project-card {
+ margin: 10px;
+}
 
 #project-box {
   position: relative;
@@ -342,4 +351,10 @@ opacity: 0;
 
 .project-button{
   position: relative;
+  transition: 0.5s; 
+  border-radius: 0.25rem;
+}
+
+.project-button:hover {
+  background-color: #FFA69E;
 }

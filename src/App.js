@@ -58,9 +58,9 @@ React.useEffect(()=> getProjects(),[])
         </div>
       </section>
       <section id="projects">
-        <h2 id="projects-header">Projects</h2>
+        <h2 id="projects-header">PROJECTS</h2>
         <hr id="projects-line" />
-        <div id="projects-buttons">
+        <div id="filter-buttons">
           <button>All</button>
           <button> React </button>
           <button> jQuery </button>
