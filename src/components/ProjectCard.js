@@ -1,16 +1,26 @@
-import React from "react"
-
+import React from "react";
 
 const ProjectCard = (props) => {
-const {project} = props
+  const { project } = props;
 
-return (
+  return (
     <div id="project-card">
-        <img id="project-image" src={project.img_url} />
+      <div id="project-box">
+        <div id="image-box">
+          <img id="project-image" src={project.img_url} alt={project.title} />
+        </div>
+        <h5 id="project-header">{project.title}</h5>
+        <div id="project-buttons">
+          <a href={project.github}>
+            <button className="project-button">GitHub Repo</button>
+          </a>
+          <a href={project.live}>
+            <button className="project-button">Live Site</button>
+          </a>
+        </div>
+      </div>
     </div>
-)
+  );
+};
 
-
-}
-
-export default ProjectCard
+export default ProjectCard;
