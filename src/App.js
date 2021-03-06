@@ -32,15 +32,15 @@ function App() {
 
   const handleAllClick = () => {
     setFilteredArr(projects);
-      setReactActive(false);
-      setAllActive(true);
-      setDjangoActive(false);
-      setJqueryActive(false);
-      setJsActive(false);
-      setRailsActive(false);
-      setRubyActive(false);
-      setExpressActive(false);
-      setPythonActive(false);
+    setReactActive(false);
+    setAllActive(true);
+    setDjangoActive(false);
+    setJqueryActive(false);
+    setJsActive(false);
+    setRailsActive(false);
+    setRubyActive(false);
+    setExpressActive(false);
+    setPythonActive(false);
   };
 
   const handleReactClick = () => {

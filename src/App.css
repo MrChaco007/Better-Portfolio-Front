@@ -312,7 +312,7 @@ button {
 
 #all-button-div {
   width: 94px;
-  margin: 40px auto 10px auto;
+  margin: 40px auto 20px auto;
 }
 
 #all-button {
@@ -355,10 +355,11 @@ button {
 }
 
 #project-cards {
-  margin: 30px 10px 0px 10px;
+  margin: 30px auto 0px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  max-width: 1000px;
 }
 
 #project-card {
