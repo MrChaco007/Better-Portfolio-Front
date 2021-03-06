@@ -4,49 +4,172 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ProjectCard from "./components/ProjectCard"
+import ProjectCard from "./components/ProjectCard";
 
 function App() {
-  const [projects, setProjects] = React.useState([])
-  
+  const [projects, setProjects] = React.useState([]);
+  const [filteredArr, setFilteredArr] = React.useState([projects]);
+  const [allActive, setAllActive] = React.useState(false);
+  const [reactActive, setReactActive] = React.useState(false);
+  const [jqueryActive, setJqueryActive] = React.useState(false);
+  const [rubyActive, setRubyActive] = React.useState(false);
+  const [djangoActive, setDjangoActive] = React.useState(false);
+  const [pythonActive, setPythonActive] = React.useState(false);
+  const [railsActive, setRailsActive] = React.useState(false);
+  const [jsActive, setJsActive] = React.useState(false);
+  const [expressActive, setExpressActive] = React.useState(false);
   const url = "https://better-portfolio-back.herokuapp.com/projects/";
   const getProjects = () => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
         setProjects(data);
-        setFilteredArr(data)
+        setFilteredArr(data);
       });
-  }
-  const [filteredArr, setFilteredArr] = React.useState([projects]);
+  };
 
-React.useEffect(()=> getProjects(),[])
+  React.useEffect(() => getProjects(), []);
 
+  const handleAllClick = () => {
+    setFilteredArr(projects);
+      setReactActive(false);
+      setAllActive(true);
+      setDjangoActive(false);
+      setJqueryActive(false);
+      setJsActive(false);
+      setRailsActive(false);
+      setRubyActive(false);
+      setExpressActive(false);
+      setPythonActive(false);
+  };
 
-const handleAllClick = () => {
-  setFilteredArr(projects)
-}
+  const handleReactClick = () => {
+    const newArr = projects.filter((project) => {
+      return project.react === true;
+    });
+    setFilteredArr(newArr);
+    setReactActive(true);
+    setAllActive(false);
+    setDjangoActive(false);
+    setJqueryActive(false);
+    setJsActive(false);
+    setRailsActive(false);
+    setRubyActive(false);
+    setExpressActive(false);
+    setPythonActive(false);
+  };
 
-const handleReactClick = () => {
-  const newArr = projects.filter((project) => {
-   return project.react === true
-  })
-  setFilteredArr(newArr)
-}
+  const handleJqueryClick = () => {
+    const newArr = projects.filter((project) => {
+      return project.jquery === true;
+    });
+    setFilteredArr(newArr);
+    setReactActive(false);
+    setAllActive(false);
+    setDjangoActive(false);
+    setJqueryActive(true);
+    setJsActive(false);
+    setRailsActive(false);
+    setRubyActive(false);
+    setExpressActive(false);
+    setPythonActive(false);
+  };
 
-const handleJqueryClick = () => {
-  const newArr = projects.filter((project) => {
-    return project.jquery === true
-  })
-  setFilteredArr(newArr);
-}
+  const handleRubyClick = () => {
+    const newArr = projects.filter((project) => {
+      return project.ruby === true;
+    });
+    setFilteredArr(newArr);
+    setReactActive(false);
+    setAllActive(false);
+    setDjangoActive(false);
+    setJqueryActive(false);
+    setJsActive(false);
+    setRailsActive(false);
+    setRubyActive(true);
+    setExpressActive(false);
+    setPythonActive(false);
+  };
 
-const handleRubyClick = () => {
-  const newArr = projects.filter((project) => {
-    return project.ruby === true;
-  });
-  setFilteredArr(newArr);
-}
+  const handleDjangoClick = () => {
+    const newArr = projects.filter((project) => {
+      return project.django === true;
+    });
+    setFilteredArr(newArr);
+    setReactActive(false);
+    setAllActive(false);
+    setDjangoActive(true);
+    setJqueryActive(false);
+    setJsActive(false);
+    setRailsActive(false);
+    setRubyActive(false);
+    setExpressActive(false);
+    setPythonActive(false);
+  };
+
+  const handlePythonClick = () => {
+    const newArr = projects.filter((project) => {
+      return project.python === true;
+    });
+    setFilteredArr(newArr);
+    setReactActive(false);
+    setAllActive(false);
+    setDjangoActive(false);
+    setJqueryActive(false);
+    setJsActive(false);
+    setRailsActive(false);
+    setRubyActive(false);
+    setExpressActive(false);
+    setPythonActive(true);
+  };
+
+  const handleExpressClick = () => {
+    const newArr = projects.filter((project) => {
+      return project.express === true;
+    });
+    setFilteredArr(newArr);
+    setReactActive(false);
+    setAllActive(false);
+    setDjangoActive(false);
+    setJqueryActive(false);
+    setJsActive(false);
+    setRailsActive(false);
+    setRubyActive(false);
+    setExpressActive(true);
+    setPythonActive(false);
+  };
+
+  const handleRailsClick = () => {
+    const newArr = projects.filter((project) => {
+      return project.rails === true;
+    });
+    setFilteredArr(newArr);
+    setReactActive(false);
+    setAllActive(false);
+    setDjangoActive(false);
+    setJqueryActive(false);
+    setJsActive(false);
+    setRailsActive(true);
+    setRubyActive(false);
+    setExpressActive(false);
+    setPythonActive(false);
+  };
+
+  const handleJsClick = () => {
+    const newArr = projects.filter((project) => {
+      return project.javascript === true;
+    });
+    setFilteredArr(newArr);
+    setReactActive(false);
+    setAllActive(false);
+    setDjangoActive(false);
+    setJqueryActive(false);
+    setJsActive(true);
+    setRailsActive(false);
+    setRubyActive(false);
+    setExpressActive(false);
+    setPythonActive(false);
+  };
 
   return (
     <div id="app">
@@ -86,20 +209,70 @@ const handleRubyClick = () => {
       <section id="projects">
         <h2 id="projects-header">PROJECTS</h2>
         <hr id="projects-line" />
+        <div id="all-button-div">
+          <button
+            className={allActive ? "all-active" : null}
+            id="all-button"
+            onClick={handleAllClick}
+          >
+            All
+          </button>
+        </div>
         <div id="filter-buttons">
-          <button onClick={handleAllClick}>All</button>
-          <button onClick={handleReactClick}> React </button>
-          <button value="jquery" onClick={handleJqueryClick}> jQuery </button>
-          <button onClick={handleRubyClick}> Ruby</button>
-          <button>Express</button>
-          <button>Rails</button>
-          <button>Django</button>
-          <button>JS</button>
+          <button
+            className={reactActive ? "active" : null}
+            onClick={handleReactClick}
+          >
+            React
+          </button>
+          <button
+            className={jqueryActive ? "active" : null}
+            onClick={handleJqueryClick}
+          >
+            jQuery
+          </button>
+          <button
+            className={rubyActive ? "active" : null}
+            onClick={handleRubyClick}
+          >
+            {" "}
+            Ruby
+          </button>
+          <button
+            className={expressActive ? "active" : null}
+            onClick={handleExpressClick}
+          >
+            Express
+          </button>
+          <button
+            className={railsActive ? "active" : null}
+            onClick={handleRailsClick}
+          >
+            Rails
+          </button>
+          <button
+            className={pythonActive ? "active" : null}
+            onClick={handlePythonClick}
+          >
+            Python
+          </button>
+          <button
+            className={djangoActive ? "active" : null}
+            onClick={handleDjangoClick}
+          >
+            Django
+          </button>
+          <button
+            className={jsActive ? "active" : null}
+            onClick={handleJsClick}
+          >
+            JS
+          </button>
         </div>
         <div id="project-cards">
-        {filteredArr.map((project, index) => {
-          return <ProjectCard key ={index} project={project} />
-        })}
+          {filteredArr.map((project, index) => {
+            return <ProjectCard key={index} project={project} />;
+          })}
         </div>
       </section>
     </div>

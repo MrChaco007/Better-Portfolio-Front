@@ -1,13 +1,13 @@
-/* APP */ 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Chivo&display=swap');
+/* APP */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Chivo&display=swap");
 #app {
-  background-color: #750ff7; 
-  font-family: 'Chivo', sans-serif;
+  background-color: #750ff7;
+  font-family: "Chivo", sans-serif;
 }
 
 h2 {
-  font-size: 35px !important; 
-  color: #EFF8E2; 
+  font-size: 35px !important;
+  color: #eff8e2;
 }
 
 #Nav {
@@ -17,7 +17,7 @@ h2 {
 .nav-link {
   color: #eff8e2 !important;
   font-weight: 600 !important;
-  font-size: 24px !important; 
+  font-size: 24px !important;
 }
 
 .navbar-toggler {
@@ -34,21 +34,20 @@ html {
 }
 
 button {
-  border: 3px solid #FFA69E; 
+  border: 3px solid black;
   background-color: transparent;
-  color: #EFF8E2;
+  color: #eff8e2;
   cursor: pointer;
-  border-radius: 0.25rem; 
+  border-radius: 0.25rem;
 }
 
-
 @media only screen and (min-width: 768px) {
- .mr-auto {
+  .mr-auto {
     flex: 1;
     justify-content: space-around;
   }
-  #nav-link{
-    margin: 5px; 
+  #nav-link {
+    margin: 5px;
   }
 }
 
@@ -57,7 +56,7 @@ button {
 #intro {
   text-align: center;
   align-items: center;
-  min-width: 200px; 
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,91 +65,86 @@ button {
 }
 
 #name {
-  color: #FFA69E; 
+  color: #ffa69e;
 }
 
-#scroll-header{
-  margin-top: 75px; 
-  color: #EFF8E2;
+#scroll-header {
+  margin-top: 75px;
+  color: #eff8e2;
 }
 
 /* CREDIT FOR MOUSE AND ARROWS DESIGN: Yurij Rightblog.ru */
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
-
-
-.mouse_scroll {
-	display: block;
-	margin: 0 auto;
-	width: 24px;
-	height: 100px;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+.mouse_scroll {
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 100px;
+}
 
-.m_scroll_arrows
-{
+.m_scroll_arrows {
   display: block;
   width: 4px;
   height: 5px;
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
   transform: rotate(45deg);
-   
-  border-right: 2px solid #FFA69E;
-  border-bottom: 2px solid #FFA69E;
+
+  border-right: 2px solid #ffa69e;
+  border-bottom: 2px solid #ffa69e;
   margin: 0 0 3px 4px;
-  
+
   width: 16px;
   height: 16px;
 }
 
-
-.unu
-{
+.unu {
   margin-top: 1px;
 }
 
-.unu, .doi, .trei
-{
-    -webkit-animation: mouse-scroll 1s infinite;
-    -moz-animation: mouse-scroll 1s infinite;
-    animation: mouse-scroll 1s infinite;
-  
+.unu,
+.doi,
+.trei {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
 }
 
-.unu
-{
-  -webkit-animation-delay: .1s;
-  -moz-animation-delay: .1s;
+.unu {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
   -webkit-animation-direction: alternate;
-  
+
   animation-direction: alternate;
   animation-delay: alternate;
 }
 
-.doi
-{
-  -webkit-animation-delay: .2s;
-  -moz-animation-delay: .2s;
+.doi {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
   -webkit-animation-direction: alternate;
-  
-  animation-delay: .2s;
+
+  animation-delay: 0.2s;
   animation-direction: alternate;
-  
+
   margin-top: -6px;
 }
 
-.trei
-{
-  -webkit-animation-delay: .3s;
-  -moz-animation-delay: .3s;
+.trei {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
   -webkit-animation-direction: alternate;
-  
-  animation-delay: .3s;
+
+  animation-delay: 0.3s;
   animation-direction: alternate;
-  
-  
+
   margin-top: -6px;
 }
 
@@ -159,9 +153,9 @@ button {
   width: 24px;
   border-radius: 14px;
   transform: none;
-  border: 2px solid #FFA69E;
+  border: 2px solid #ffa69e;
   top: 170px;
-  display: none; 
+  display: none;
 }
 
 .wheel {
@@ -171,12 +165,12 @@ button {
   margin: 5px auto;
   background: white;
   position: relative;
-  
+
   height: 4px;
   width: 4px;
   border: 2px solid #fff;
   -webkit-border-radius: 8px;
-          border-radius: 8px;
+  border-radius: 8px;
 }
 
 .wheel {
@@ -185,8 +179,8 @@ button {
   animation: mouse-wheel 0.6s linear infinite;
 }
 
-@-webkit-keyframes mouse-wheel{
-   0% {
+@-webkit-keyframes mouse-wheel {
+  0% {
     opacity: 1;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -201,105 +195,180 @@ button {
   }
 }
 @-moz-keyframes mouse-wheel {
-  0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
 }
 @-o-keyframes mouse-wheel {
-
-   0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
 }
 @keyframes mouse-wheel {
-
-   0% { top: 1px; }
-  25% { top: 2px; }
-  50% { top: 3px;}
-  75% { top: 2px;}
-  100% { top: 1px;}
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
 }
 
 @-webkit-keyframes mouse-scroll {
-
-  0%   { opacity: 0;}
-  50%  { opacity: .5;}
-  100% { opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @-moz-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @-o-keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes mouse-scroll {
-
-  0%   { opacity: 0; }
-  50%  { opacity: .5; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 /* PROJECTS SECTION */
 
 #projects {
-  margin: 0px 15px; 
+  margin: 0px 15px;
 }
 #projects-header {
-  margin: 100px auto 0px auto; 
-  min-width: 200px; 
+  margin: 100px auto 0px auto;
+  min-width: 200px;
   text-align: center;
 }
 
-#projects-line{
-  width: 76px; 
-  margin-top: 10px; 
+#projects-line {
+  width: 76px;
+  margin-top: 10px;
   margin-bottom: 25px;
-  height: 10px; 
+  height: 10px;
   background-color: black;
 }
 
+#all-button-div {
+  width: 94px;
+  margin: 40px auto 10px auto;
+}
+
+#all-button {
+  border-radius: 0.25rem;
+  border-color: #ffa69e;
+  width: 94px;
+  transition: 0.5s;
+}
+
+#all-button:hover {
+  background-color: #ffa69e;
+}
+
 #filter-buttons {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 50px auto; 
+  margin: 5px auto;
   max-width: 518px;
-  padding: 0px 20px; 
+  padding: 0px 20px;
 }
 
-#filter-buttons button{
-border-radius: 0.25rem;
-margin: 5px;
-width: 94px;
+#filter-buttons button {
+  border-radius: 0.25rem;
+  margin: 5px;
+  width: 94px;
+  transition: 0.5s;
 }
 
+#filter-buttons button:hover {
+  background-color: black;
+}
+
+.all-active{
+  background-color: #ffa69e ;
+}
+
+.active {
+  background-color: black;
+}
 
 #project-cards {
   margin: 30px 10px 0px 10px;
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 #project-card {
- margin: 10px;
+  margin: 10px;
 }
 
 #project-box {
   position: relative;
-  background: black; 
-  box-shadow: 0 30px 30px rgba(0,0,0,.5);
+  background: black;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   width: 275px;
   min-height: 175px;
 }
@@ -307,28 +376,27 @@ width: 94px;
 #project-box #image-box {
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   width: 100%;
   height: 100%;
-
 }
 
 #project-box #image-box img {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   transition: 0.5s;
 }
 
-#project-box:hover #image-box img{
-opacity: 0; 
+#project-box:hover #image-box img {
+  opacity: 0;
 }
 
-#project-header{
-  color:white; 
-  padding: 25px 20px 5px 20px; 
+#project-header {
+  color: white;
+  padding: 25px 20px 5px 20px;
   text-align: center;
   font-weight: bold;
   font-size: 22px;
@@ -339,42 +407,43 @@ opacity: 0;
   justify-content: space-evenly;
   bottom: 1px;
   transition: 0.5s;
-  opacity: 0; 
-  margin: 10px; 
-  margin-top: 20px; 
+  opacity: 0;
+  margin: 10px;
+  margin-top: 20px;
   font-size: 20px;
 }
 
-#project-box:hover #project-buttons{
-  opacity:1; 
+#project-box:hover #project-buttons {
+  opacity: 1;
 }
 
-.project-button{
+.project-button {
   position: relative;
-  transition: 0.5s; 
+  transition: 0.5s;
   border-radius: 0.25rem;
+  border-color: #ffa69e;
 }
 
 .project-button:hover {
-  background-color: #FFA69E;
+  background-color: #ffa69e;
 }
 
-@media only screen and (max-width:486px) and (min-width:450px){
-  #filter-buttons{
+@media only screen and (max-width: 486px) and (min-width: 450px) {
+  #filter-buttons {
     padding-left: 75px;
     padding-right: 75px;
   }
 }
 
-@media only screen and (max-width:449px) and (min-width:400px){
-  #filter-buttons{
+@media only screen and (max-width: 449px) and (min-width: 400px) {
+  #filter-buttons {
     padding-left: 54px;
     padding-right: 54px;
   }
 }
 
-@media only screen and (max-width:399px) and (min-width:350px){
-  #filter-buttons{
+@media only screen and (max-width: 399px) and (min-width: 350px) {
+  #filter-buttons {
     padding-left: 40px;
     padding-right: 40px;
   }
