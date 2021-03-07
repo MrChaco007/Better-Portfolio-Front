@@ -411,7 +411,7 @@ button {
   bottom: 1px;
   transition: 0.5s;
   opacity: 0;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 #project-box:hover #project-buttons {
@@ -425,6 +425,8 @@ button {
   border-color: #ffa69e;
   width: 160px;
   margin-top:10px;
+  padding-left: 0px;
+  padding-right: 0px; 
 }
 
 .project-button:hover {
