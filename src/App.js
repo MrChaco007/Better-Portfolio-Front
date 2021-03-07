@@ -220,50 +220,50 @@ function App() {
         </div>
         <div id="filter-buttons">
           <button
-            className={reactActive ? "active" : null}
+            className={reactActive ? "active2" : null}
             onClick={handleReactClick}
           >
             React
           </button>
           <button
-            className={jqueryActive ? "active" : null}
+            className={jqueryActive ? "active2" : null}
             onClick={handleJqueryClick}
           >
             jQuery
           </button>
           <button
-            className={rubyActive ? "active" : null}
+            className={rubyActive ? "active2" : null}
             onClick={handleRubyClick}
           >
             {" "}
             Ruby
           </button>
           <button
-            className={expressActive ? "active" : null}
+            className={expressActive ? "active2" : null}
             onClick={handleExpressClick}
           >
             Express
           </button>
           <button
-            className={railsActive ? "active" : null}
+            className={railsActive ? "active2" : null}
             onClick={handleRailsClick}
           >
             Rails
           </button>
           <button
-            className={pythonActive ? "active" : null}
+            className={pythonActive ? "active2" : null}
             onClick={handlePythonClick}
           >
             Python
           </button>
           <button
-            className={djangoActive ? "active" : null}
+            className={djangoActive ? "active2" : null}
             onClick={handleDjangoClick}
           >
             Django
           </button>
           <button
-            className={jsActive ? "active" : null}
+            className={jsActive ? "active2" : null}
             onClick={handleJsClick}
           >
             JS
