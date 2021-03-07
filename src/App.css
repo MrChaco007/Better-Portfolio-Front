@@ -368,7 +368,7 @@ button {
 
 #project-box {
   position: relative;
-  background: black;
+  background-image: linear-gradient(to bottom right, black,rgb(58, 58, 58));
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   width: 300px;
   min-height: 200px;
