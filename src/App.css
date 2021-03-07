@@ -371,7 +371,7 @@ button {
   background: black;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   width: 300px;
-  min-height: 175px;
+  min-height: 200px;
 }
 
 #project-box #image-box {
@@ -397,10 +397,10 @@ button {
 
 #project-header {
   color: white;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 5px 0px 5px;
   text-align: center;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #project-buttons {
