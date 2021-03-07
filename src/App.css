@@ -372,6 +372,7 @@ button {
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
   width: 300px;
   min-height: 200px;
+  padding-bottom:15px; 
 }
 
 #project-box #image-box {
@@ -397,10 +398,11 @@ button {
 
 #project-header {
   color: white;
-  padding: 25px 5px 0px 5px;
+  padding: 25px 10px 0px 10px;
   text-align: center;
   font-weight: bold;
   font-size: 22px;
+  margin-bottom: 0px;
 }
 
 #project-buttons {
@@ -415,7 +417,7 @@ button {
 }
 
 #last-project-button {
-  margin-top:7px; 
+  margin-top:10px; 
 }
 
 #project-box:hover #project-buttons {
@@ -428,7 +430,6 @@ button {
   border-radius: 0.25rem;
   border-color: #ffa69e;
   width: 160px;
-  margin-top:7px;
   padding-left: 0px;
   padding-right: 0px; 
 }
