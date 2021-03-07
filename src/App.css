@@ -397,10 +397,10 @@ button {
 
 #project-header {
   color: white;
-  padding: 20px 5px 0px 5px;
+  padding: 25px 5px 0px 5px;
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 #project-buttons {
@@ -414,6 +414,10 @@ button {
   font-size: 19px;
 }
 
+#last-project-button {
+  margin-top:7px; 
+}
+
 #project-box:hover #project-buttons {
   opacity: 1;
 }
@@ -424,10 +428,11 @@ button {
   border-radius: 0.25rem;
   border-color: #ffa69e;
   width: 160px;
-  margin-top:10px;
+  margin-top:7px;
   padding-left: 0px;
   padding-right: 0px; 
 }
+
 
 .project-button:hover {
   background-color: #ffa69e;
