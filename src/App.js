@@ -185,7 +185,7 @@ function App() {
           <Nav className="mr-auto">
             <Nav.Link href="#intro">INTRO</Nav.Link>
             <Nav.Link href="#projects">PROJECTS</Nav.Link>
-            <Nav.Link href="#pricing">WHO+WHAT</Nav.Link>
+            <Nav.Link href="#who">WHO</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -207,8 +207,8 @@ function App() {
         </div>
       </section>
       <section id="projects">
-        <h2 id="projects-header">PROJECTS</h2>
-        <hr id="projects-line" />
+        <h2 className="header">PROJECTS</h2>
+        <hr className="header-line" />
         <div id="all-button-div">
           <button
             className={allActive ? "all-active" : null}
@@ -273,6 +273,37 @@ function App() {
           {filteredArr.map((project, index) => {
             return <ProjectCard key={index} project={project} />;
           })}
+        </div>
+      </section>
+      <section id="who">
+        <h2 className="header">WHO</h2>
+        <hr className="header-line" />
+        <div id="profile-div">
+          <img
+            id="profile"
+            src="https://res.cloudinary.com/dvnl2s9um/image/upload/v1608745815/15672988_10211212030552102_7722795121537872527_n_pkzqgc.jpg"
+          />
+          <br />
+          <a
+            href="https://drive.google.com/file/d/1y9kLd4pJZ_zPsDs7T4Tp-_cGtNzdlqA6/view?usp=sharing"
+            target="_blank"
+          >
+            <button id="resume-button">View My Resume</button>
+          </a>
+          <div id="bio-container">
+            <p>
+              I am a software developer with 4 years of marketing and
+              communications experience. I combine my rapidly evolving coding
+              potential with my exceptional soft skills to not only find
+              solutions to technical problems but also ensure interpersonal
+              conflict does not get in the way.
+              <br />
+              <br />I am motivated by my appetite to get better at what I do and
+              to be a reliable asset for my team. My marketing experience
+              enables me to see how even the most robust back-end logic is
+              futile without an intuitive and appealing front-end design.
+            </p>
+          </div>
         </div>
       </section>
     </div>
