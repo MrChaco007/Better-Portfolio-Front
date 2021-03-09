@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "./Canvas.scss"
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import React, { Component } from "react";
@@ -204,6 +205,28 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <section id="intro">
+        <div className="background">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <h2 id="intro-header">
           Hello, I'm <span id="name">Alexander Chaconas</span>. <br />
           I'm a full-stack developer.
@@ -283,7 +306,9 @@ function App() {
             JS
           </button>
         </div>
-        <div id="project-cards">{filteredArr.length>0?loaded():loading()}</div>
+        <div id="project-cards">
+          {filteredArr.length > 0 ? loaded() : loading()}
+        </div>
       </section>
       <section id="who">
         <h2 className="header">WHO</h2>

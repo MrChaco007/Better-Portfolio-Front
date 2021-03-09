@@ -4,12 +4,18 @@
   background-color: #750ff7;
   font-family: "Chivo", sans-serif;
   color: white; 
+  z-index: 5;
+  overflow: hidden;
+  position: relative;
 }
 
 h2 {
   font-size: 35px !important;
   color: #eff8e2;
 }
+
+
+
 
 #Nav {
   background-color: #750ff7;
