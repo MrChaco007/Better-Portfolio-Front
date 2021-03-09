@@ -5,6 +5,9 @@ import Nav from "react-bootstrap/Nav";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProjectCard from "./components/ProjectCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithubSquare} from "@fortawesome/free-brands-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [projects, setProjects] = React.useState([]);
@@ -307,10 +310,21 @@ function App() {
         </div>
       </section>
       <div id="footer">
+        <a href="#app">
+          <FontAwesomeIcon id="up-arrow" icon={faArrowUp} size="3x" />
+        </a>
         <div id="icons">
-
+          <a className="icon-link" href="https://github.com/MrChaco007">
+            <FontAwesomeIcon className="icon" icon={faGithubSquare} size="2x" />
+          </a>
+          <a
+            className="icon-link"
+            href="https://www.linkedin.com/in/alex-chaconas/"
+          >
+            <FontAwesomeIcon className="icon" icon={faLinkedin} size="2x" />
+          </a>
         </div>
-          <p id="footer-text">Alexander Chaconas ©2021</p>
+        <p id="footer-text">Alexander Chaconas ©2021</p>
       </div>
     </div>
   );

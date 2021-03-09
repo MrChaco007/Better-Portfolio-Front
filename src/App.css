@@ -457,6 +457,7 @@ border: 1px #ffa69e solid;
 #profile{
   width: 120px; 
   border-radius: 50%;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
 }
 
 #resume-button{
@@ -487,19 +488,42 @@ min-width: 275px;
   background-color: #ffa69e; 
 }
 
+#up-arrow{
+  position: relative; 
+  bottom: 25px; 
+  color: black; 
+  background-color:  white;
+  width: 50px !important; 
+  height: 50px !important; 
+  cursor: pointer;
+}
+
 #footer {
-  height: 150px;
+  height: 200px;
   width:100%; 
   background-color: black;
-  margin-top: 30px;
+  margin-top: 75px;
   text-align: center;
 }
 
 
 
 #footer-text{
-  font-size: 14px; 
+  font-size: 16px; 
   padding: 10px 0px 0px 10px; 
+}
+
+#footer a{
+  text-decoration: none;
+  color: #ffa69e;
+}
+
+#icons{
+  padding-top: 5px; 
+}
+
+.icon{
+  margin: 20px; 
 }
 
 @media only screen and (max-width: 486px) and (min-width: 450px) {
