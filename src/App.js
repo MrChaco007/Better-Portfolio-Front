@@ -306,6 +306,12 @@ function App() {
           </div>
         </div>
       </section>
+      <div id="footer">
+        <div id="icons">
+
+        </div>
+          <p id="footer-text">Alexander Chaconas ©2021</p>
+      </div>
     </div>
   );
 }

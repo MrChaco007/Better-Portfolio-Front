@@ -487,6 +487,21 @@ min-width: 275px;
   background-color: #ffa69e; 
 }
 
+#footer {
+  height: 150px;
+  width:100%; 
+  background-color: black;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+
+#footer-text{
+  font-size: 14px; 
+  padding: 10px 0px 0px 10px; 
+}
+
 @media only screen and (max-width: 486px) and (min-width: 450px) {
   #filter-buttons {
     padding-left: 75px;
