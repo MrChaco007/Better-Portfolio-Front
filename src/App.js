@@ -12,7 +12,7 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [projects, setProjects] = React.useState([]);
-  const [filteredArr, setFilteredArr] = React.useState([projects]);
+  const [filteredArr, setFilteredArr] = React.useState([]);
   const [allActive, setAllActive] = React.useState(false);
   const [reactActive, setReactActive] = React.useState(false);
   const [jqueryActive, setJqueryActive] = React.useState(false);
@@ -176,7 +176,13 @@ function App() {
   };
 
   const loading = () => {
-    <div class="lds-dual-ring"></div>;
+    return <div className="lds-dual-ring"></div>;
+  };
+
+  const loaded = () => {
+    return filteredArr.map((project, index) => {
+      return <ProjectCard key={index} project={project} />;
+    });
   };
 
   return (
@@ -277,15 +283,7 @@ function App() {
             JS
           </button>
         </div>
-        <div id="project-cards">
-          {filteredArr.map((project, index) => {
-            return (filteredArr.length >= 1 ? 
-              <ProjectCard key={index} project={project} />
-             : 
-              loading()
-            );
-          })}
-        </div>
+        <div id="project-cards">{filteredArr.length>0?loaded():loading()}</div>
       </section>
       <section id="who">
         <h2 className="header">WHO</h2>
