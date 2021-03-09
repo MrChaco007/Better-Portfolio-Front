@@ -357,6 +357,31 @@ button {
   background-color: black;
 }
 
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #project-cards {
   margin: 30px auto 0px auto;
   display: flex;
@@ -486,6 +511,46 @@ min-width: 275px;
 
 #profile-div button:hover {
   background-color: #ffa69e; 
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  width: 300px; 
+  margin: 0 auto;
+  border: 3px solid black;
+  padding: 20px; 
+  border-radius: 0.25rem;
+}
+
+#name {
+  margin-bottom: 20px; 
+}
+
+#email{
+  margin-bottom: 20px; 
+}
+
+#message{
+  margin-bottom: 20px; 
+}
+
+form button{
+  width: 94px;
+  height: 45px; 
+  border-radius: 0.25rem;
+  margin: 0 auto; 
+  border-color: #ffa69e;
+  transition: 0.5s;
+}
+
+form button:hover {
+  background-color: #ffa69e;
+}
+
+#form-reply{
+  margin: 15px 0px 0px 0px;
+  text-align: center;
 }
 
 #up-arrow{

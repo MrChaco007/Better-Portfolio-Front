@@ -5,8 +5,9 @@ import Nav from "react-bootstrap/Nav";
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProjectCard from "./components/ProjectCard";
+import ContactForm from "./components/ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithubSquare} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
@@ -174,6 +175,10 @@ function App() {
     setPythonActive(false);
   };
 
+  const loading = () => {
+    <div class="lds-dual-ring"></div>;
+  };
+
   return (
     <div id="app">
       <Navbar id="Nav" collapseOnSelect expand="md">
@@ -274,7 +279,11 @@ function App() {
         </div>
         <div id="project-cards">
           {filteredArr.map((project, index) => {
-            return <ProjectCard key={index} project={project} />;
+            return (filteredArr.length >= 1 ? 
+              <ProjectCard key={index} project={project} />
+             : 
+              loading()
+            );
           })}
         </div>
       </section>
@@ -308,6 +317,9 @@ function App() {
             </p>
           </div>
         </div>
+        <section>
+          <ContactForm />
+        </section>
       </section>
       <div id="footer">
         <a href="#app">

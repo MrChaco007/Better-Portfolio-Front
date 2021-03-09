@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
           <img id="project-image" src={project.img_url} alt={project.title} />
         </div>
         <h5 id="project-header">{project.title}</h5>
-        <br/>
+        <br />
         <div id="project-buttons">
           <a href={project.github}>
             <button className="project-button">GitHub Repo</button>
