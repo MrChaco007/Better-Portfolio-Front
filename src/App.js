@@ -233,7 +233,7 @@ function App() {
             Hello, I'm <span id="name2">Alexander Chaconas</span>. <br />
             I'm a full-stack developer.
           </h2>
-          <p id="scroll-header">View my work</p>
+          <p id="scroll-header">Check out my work</p>
           <div className="mouse_scroll">
             <div className="mouse">
               <div className="wheel"></div>
