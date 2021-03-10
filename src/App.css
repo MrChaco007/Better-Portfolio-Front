@@ -25,6 +25,7 @@ h2 {
 
 #Nav {
   background-color: #750ff7;
+  padding-bottom: 0px !important;
 }
 
 .nav-link {
@@ -77,16 +78,16 @@ button {
 #intro {
   text-align: center;
   align-items: center;
-  height: 75vh;
+  height: calc(100vh + 53px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 50px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
   background-color: #750ff7;
 }
 
-#intro-header{
-  margin-top: 20px;
+#header{
+  margin-bottom: 40px;
 }
 
 #name2 {
@@ -322,7 +323,7 @@ button {
   margin: 0px 15px;
 }
 .header {
-  margin: 100px auto 0px auto;
+  margin: 50px auto 0px auto;
   min-width: 200px;
   text-align: center;
 }
@@ -653,10 +654,10 @@ form button:hover {
    #intro-header{
     margin-top: 0px;
   }
-  #intro{
+  /* #intro{
     margin-top: 0px; 
     height: 700px;
-  }
+  } */
 
  #projects .header{
     margin-top: 0px; 
@@ -669,9 +670,9 @@ form button:hover {
 }
 
 @media only screen and (max-width: 425px) {
-  #intro{
+  /* #intro{
     height: 500px; 
-  }
+  } */
 
 
 }
