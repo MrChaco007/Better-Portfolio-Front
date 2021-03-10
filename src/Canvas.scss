@@ -43,6 +43,7 @@ $amount: 15;
       box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
       position: absolute;
       z-index: 1;
+      overflow: hidden;
     }
   }
 }
