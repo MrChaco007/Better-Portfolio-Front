@@ -649,7 +649,7 @@ form button:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  #intro-header{
+   #intro-header{
     margin-top: 0px;
   }
   #intro{
@@ -657,7 +657,7 @@ form button:hover {
     height: 700px;
   }
 
-  #projects .header{
+ #projects .header{
     margin-top: 0px; 
   }
 
