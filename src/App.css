@@ -33,12 +33,14 @@ h2 {
   font-weight: 600 !important;
   font-size: 24px !important;
   z-index: 2; 
-  transition: 0.2s;
+  transition: transform 0.2s;
+  transition: padding 1s;
 }
 
 .nav-link:hover {
   transform: scale(1.3) !important; 
 }
+
 
 
 .navbar-toggler {
@@ -48,6 +50,22 @@ h2 {
 
 #brand {
   width: 75px;
+}
+
+.show .navbar-nav{
+  transition: padding 1s; 
+}
+
+
+.show .navbar-nav{
+  padding-top:40px !important; 
+}
+
+
+
+.show .nav-link{
+  padding-bottom: 0px; 
+  padding-top: 0px; 
 }
 
 button {

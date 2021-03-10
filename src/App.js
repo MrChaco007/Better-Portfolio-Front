@@ -198,7 +198,7 @@ function App() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#intro">INTRO</Nav.Link>
+            <Nav.Link id="intro-link" href="#intro">INTRO</Nav.Link>
             <Nav.Link href="#projects">PROJECTS</Nav.Link>
             <Nav.Link href="#who">WHO</Nav.Link>
             <Nav.Link href="#contact">CONTACT</Nav.Link>
