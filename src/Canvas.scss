@@ -54,3 +54,9 @@ $amount: 15;
     z-index:1; 
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .background{
+    height: 5vw;
+  }
+}
