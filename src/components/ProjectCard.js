@@ -10,8 +10,8 @@ const ProjectCard = (props) => {
           <img id="project-image" src={project.img_url} alt={project.title} />
         </div>
         <h5 id="project-header">{project.title}</h5>
-        <br />
-        <div id="project-buttons">
+        {project.title === "PC Builder Full Stack App (MERN)"? null :<br />}
+        <div id="project-buttons" className={project.title === "PC Builder Full Stack App (MERN)"? "special-project-buttons":null}>
           <a target="_blank" href={project.github}>
             <button className="project-button">GitHub Repo</button>
           </a>

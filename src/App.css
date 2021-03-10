@@ -479,6 +479,10 @@ border: 1px #ffa69e solid;
   font-size: 22px;
   margin-bottom: 0px;
 }
+.special-project-buttons{
+  margin-top: 15px; 
+}
+
 
 #project-buttons {
   display: flex;
