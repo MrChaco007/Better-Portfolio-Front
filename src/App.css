@@ -645,4 +645,7 @@ form button:hover {
   #intro-header{
     margin-top: 0px;
   }
+  #intro{
+    margin-top: 35px; 
+  }
 }
