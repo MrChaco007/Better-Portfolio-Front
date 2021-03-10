@@ -188,7 +188,6 @@ function App() {
 
   return (
     <div id="app">
-      <span id="spoiler">
         <Navbar id="Nav" collapseOnSelect expand="md">
           <Navbar.Brand>
             <img
@@ -206,7 +205,6 @@ function App() {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-      </span>
       <section id="intro">
         <div className="background">
           <span></span>
