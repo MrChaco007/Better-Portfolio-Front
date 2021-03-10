@@ -8,10 +8,12 @@ html {
 }
 
 
+
 #app {
   background-color: #750ff7;
   font-family: "Chivo", sans-serif;
   color: white; 
+  overflow-x: hidden; 
 }
 
 h2 {
