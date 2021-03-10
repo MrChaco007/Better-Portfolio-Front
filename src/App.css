@@ -77,6 +77,10 @@ button {
   background-color: #750ff7;
 }
 
+#intro-header{
+  margin-top: 20px;
+}
+
 #name2 {
   color: #ffa69e;
 }
