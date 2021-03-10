@@ -57,6 +57,12 @@ $amount: 15;
 }
 @media only screen and (max-width: 768px) {
   .background{
-    height: 80vh; 
+    height: 75vh; 
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .background{
+    height: 90vh; 
   }
 }
