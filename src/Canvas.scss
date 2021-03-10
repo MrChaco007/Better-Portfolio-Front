@@ -2,7 +2,7 @@
 
 .background {
   width: 100vw;
-  height: 125vw;
+  height: 114vw;
   background: transparent;
   z-index: 1;
   position: absolute;
@@ -34,7 +34,7 @@ $amount: 15;
   @for $i from 1 through $amount {
     &:nth-child(#{$i}) {
       color: nth($colors, random(length($colors)));
-      top: 100px;
+      top: random(100) * 1%;
       left: random(100) * 1%;
       animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
       animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
