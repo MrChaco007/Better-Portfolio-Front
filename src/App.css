@@ -42,6 +42,7 @@ h2 {
 
 .navbar-toggler {
   border: none !important;
+  z-index: 2;
 }
 
 #brand {
