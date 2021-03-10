@@ -2,12 +2,13 @@
 
 .background {
   width: 100vw;
-  height: 10vw;
+  height: 125vw;
   background: transparent;
   z-index: 1;
   position: absolute;
-  top: 150px;
-  left: 150px;
+  top: 0px;
+  left: 0px;
+  overflow-x: hidden; 
 }
 
 $particleSize: 20vmin;
@@ -26,7 +27,7 @@ $amount: 15;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   $colors: (
-    rgba(64, 0, 173, 0.5),
+    rgba(45, 3, 117, 0.664),
     rgba(228, 90, 132, 0.5),
     rgba(255, 166, 158, 0.5)
   );
