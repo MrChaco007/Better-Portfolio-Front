@@ -188,22 +188,25 @@ function App() {
 
   return (
     <div id="app">
-      <Navbar id="Nav" collapseOnSelect expand="md">
-        <Navbar.Brand>
-          <img
-            id="brand"
-            src="https://res.cloudinary.com/dvnl2s9um/image/upload/v1609191931/Personal_Logo_1_adiipp.png"
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#intro">INTRO</Nav.Link>
-            <Nav.Link href="#projects">PROJECTS</Nav.Link>
-            <Nav.Link href="#who">WHO</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <span id="spoiler">
+        <Navbar id="Nav" collapseOnSelect expand="md">
+          <Navbar.Brand>
+            <img
+              id="brand"
+              src="https://res.cloudinary.com/dvnl2s9um/image/upload/v1609191931/Personal_Logo_1_adiipp.png"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="#intro">INTRO</Nav.Link>
+              <Nav.Link href="#projects">PROJECTS</Nav.Link>
+              <Nav.Link href="#who">WHO</Nav.Link>
+              <Nav.Link href="#contact">CONTACT</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </span>
       <section id="intro">
         <div className="background">
           <span></span>
@@ -228,7 +231,7 @@ function App() {
           <span></span>
         </div>
         <h2 id="intro-header">
-          Hello, I'm <span id="name">Alexander Chaconas</span>. <br />
+          Hello, I'm <span id="name2">Alexander Chaconas</span>. <br />
           I'm a full-stack developer.
         </h2>
         <p id="scroll-header">View my work</p>
@@ -340,7 +343,7 @@ function App() {
             </p>
           </div>
         </div>
-        <section>
+        <section id="contact">
           <ContactForm />
         </section>
       </section>

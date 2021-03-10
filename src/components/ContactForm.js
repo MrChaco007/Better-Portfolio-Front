@@ -56,7 +56,7 @@ function MyForm() {
 
   return (
     <div>
-      <h2 className="header">CONTACT ME</h2>
+      <h2 className="header">CONTACT</h2>
       <hr className="header-line" />
       <form id="form" onSubmit={handleOnSubmit}>
         <label htmlFor="name">Name:</label>

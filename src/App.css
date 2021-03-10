@@ -1,20 +1,23 @@
 /* APP */
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Chivo&display=swap");
+
+html {
+  background-color: #750ff7;
+  scroll-behavior: smooth;
+}
+
 #app {
   background-color: #750ff7;
   font-family: "Chivo", sans-serif;
   color: white; 
-  z-index: 5;
   overflow: hidden;
-  position: relative;
 }
 
 h2 {
   font-size: 35px !important;
   color: #eff8e2;
+  z-index: 2;
 }
-
-
 
 
 #Nav {
@@ -25,15 +28,12 @@ h2 {
   color: #eff8e2 !important;
   font-weight: 600 !important;
   font-size: 24px !important;
+  z-index: 2; 
 }
+
 
 .navbar-toggler {
   border: none !important;
-}
-
-html {
-  background-color: #750ff7;
-  scroll-behavior: smooth;
 }
 
 #brand {
@@ -46,6 +46,11 @@ button {
   color: #eff8e2;
   cursor: pointer;
   border-radius: 0.25rem;
+}
+
+.mouse_scroll{
+  z-index: 2;
+  position: relative; 
 }
 
 @media only screen and (min-width: 768px) {
@@ -64,14 +69,15 @@ button {
   text-align: center;
   align-items: center;
   min-width: 200px;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 40px 20px 0px 20px;
+  margin: 50px 20px 0px 20px;
   background-color: #750ff7;
 }
 
-#name {
+#name2 {
   color: #ffa69e;
 }
 
@@ -623,4 +629,11 @@ form button:hover {
     padding-left: 40px;
     padding-right: 40px;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .mouse {
+    display: block; 
+  }
+
 }
