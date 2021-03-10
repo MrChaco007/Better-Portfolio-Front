@@ -12,10 +12,10 @@ const ProjectCard = (props) => {
         <h5 id="project-header">{project.title}</h5>
         <br />
         <div id="project-buttons">
-          <a href={project.github}>
+          <a target="_blank" href={project.github}>
             <button className="project-button">GitHub Repo</button>
           </a>
-          <a id="last-project-button" href={project.live}>
+          <a target="_blank" id="last-project-button" href={project.live}>
             <button className="project-button">Live Site</button>
           </a>
         </div>

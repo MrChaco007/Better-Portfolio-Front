@@ -2,7 +2,7 @@
 
 .background {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: transparent;
   z-index: 1;
   position: absolute;
@@ -63,6 +63,6 @@ $amount: 15;
 
 @media only screen and (max-width: 425px) {
   .background{
-    height: 100vh; 
+    height: 95vh; 
   }
 }
