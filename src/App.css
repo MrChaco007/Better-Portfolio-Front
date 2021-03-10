@@ -653,6 +653,16 @@ form button:hover {
     margin-top: 0px;
   }
   #intro{
-    margin-top: 35px; 
+    margin-top: 0px; 
+    height: 700px;
   }
+
+  #projects .header{
+    margin-top: 0px; 
+  }
+
+  .nav-link:hover{
+    transform: none !important; 
+  }
+  
 }
