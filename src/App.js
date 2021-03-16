@@ -337,7 +337,7 @@ function App() {
               libraries, integrated development environments, languages, and
               code hosting platforms with exceptional interpersonal
               communication and leadership skills to develop well-tested, clean,
-              and eye-grabbing applications. I am motivated by my strong
+              and eye-grabbing applications. <br/> <br/> I am motivated by my strong
               appetite to get better at what I do and to become a reliable asset
               for a team. My marketing experience enables me to see how even the
               most robust back end logic is futile without an intuitive,
