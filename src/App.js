@@ -325,7 +325,7 @@ function App() {
           />
           <br />
           <a
-            href="https://drive.google.com/file/d/13VRxSYxS36D2O_cwPuCsSv6kcwrvhexU/view?usp=sharing"
+            href="https://drive.google.com/file/d/1CMjijE8Hhro2cgUEiOVbD_vdIDR1ZD80/view?usp=sharing"
             target="_blank"
           >
             <button id="resume-button">View My Resume</button>
