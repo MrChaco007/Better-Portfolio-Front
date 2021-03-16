@@ -325,7 +325,7 @@ function App() {
           />
           <br />
           <a
-            href="https://drive.google.com/file/d/1VrVYMS8XnwsmWo_X5jbF6lKbX_8D1vjJ/view?usp=sharing"
+            href="https://drive.google.com/file/d/13VRxSYxS36D2O_cwPuCsSv6kcwrvhexU/view?usp=sharing"
             target="_blank"
           >
             <button id="resume-button">View My Resume</button>
@@ -333,15 +333,15 @@ function App() {
           <div id="bio-container">
             <p>
               I am a software developer with 4 years of marketing and
-              communications experience. I combine my rapidly evolving coding
-              potential with my exceptional soft skills to not only find
-              solutions to technical problems but also ensure interpersonal
-              conflict does not get in the way.
-              <br />
-              <br />I am motivated by my appetite to get better at what I do and
-              to be a reliable asset for my team. My marketing experience
-              enables me to see how even the most robust back-end logic is
-              futile without an intuitive and appealing front-end design.
+              communications experience. I combine my knowledge of frameworks,
+              libraries, integrated development environments, languages, and
+              code hosting platforms with exceptional interpersonal
+              communication and leadership skills to develop well-tested, clean,
+              and eye-grabbing applications. I am motivated by my strong
+              appetite to get better at what I do and to become a reliable asset
+              for a team. My marketing experience enables me to see how even the
+              most robust back end logic is futile without an intuitive,
+              user-friendly, and appealing front end design.
             </p>
           </div>
         </div>
