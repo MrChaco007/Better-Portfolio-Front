@@ -325,7 +325,7 @@ function App() {
           />
           <br />
           <a
-            href="https://drive.google.com/file/d/1CMjijE8Hhro2cgUEiOVbD_vdIDR1ZD80/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ASnf4fMUO4r9YQ5TKFaA6KN3RFwVaR4k/view?usp=sharing"
             target="_blank"
           >
             <button id="resume-button">View My Resume</button>
@@ -337,11 +337,11 @@ function App() {
               libraries, integrated development environments, languages, and
               code hosting platforms with exceptional interpersonal
               communication and leadership skills to develop well-tested, clean,
-              and eye-grabbing applications. <br/> <br/> I am motivated by my strong
-              appetite to get better at what I do and to become a reliable asset
-              for a team. My marketing experience enables me to see how even the
-              most robust back end logic is futile without an intuitive,
-              user-friendly, and appealing front end design.
+              and eye-grabbing applications. <br /> <br /> I am motivated by my
+              strong appetite to get better at what I do and to become a
+              reliable asset for a team. My marketing experience enables me to
+              see how even the most robust back end logic is futile without an
+              intuitive, user-friendly, and appealing front end design.
             </p>
           </div>
         </div>
