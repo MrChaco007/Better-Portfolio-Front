@@ -308,7 +308,7 @@ function App() {
             className={jsActive ? "active2" : null}
             onClick={handleJsClick}
           >
-            JS
+            ES6
           </button>
         </div>
         <div id="project-cards">
