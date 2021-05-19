@@ -332,16 +332,16 @@ function App() {
           </a>
           <div id="bio-container">
             <p>
-              I am a software developer with 4 years of marketing and
-              communications experience. I combine my knowledge of frameworks,
-              libraries, integrated development environments, languages, and
-              code hosting platforms with exceptional interpersonal
-              communication and leadership skills to develop well-tested, clean,
-              and eye-grabbing applications. <br /> <br /> I am motivated by my
-              strong appetite to get better at what I do and to become a
-              reliable asset for a team. My marketing experience enables me to
-              see how even the most robust back end logic is futile without an
-              intuitive, user-friendly, and appealing front end design.
+              I am a full stack engineer with 5 years of overall professional
+              experience, during which I learned how to develop a wide variety
+              of client solutions as part of a cross-functional team; developed
+              quality software solutions for projects on-time; troubleshot,
+              debugged, fixed, and upgraded software when necessary; adhered to
+              and promoted the best software programming practices, such as
+              coding standards, code and design reviews, and test coverage;
+              became intimately familiar with database architecture and design
+              concepts; and effectively communicated technical concepts with
+              peers and other members of a team.
             </p>
           </div>
         </div>
