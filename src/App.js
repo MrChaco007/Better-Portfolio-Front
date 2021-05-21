@@ -332,7 +332,7 @@ function App() {
           </a>
           <div id="bio-container">
             <p>
-              I am a full stack engineer with 5 years of overall professional
+              I am a full stack engineer with 6 years of overall professional
               experience, during which I learned how to develop a wide variety
               of client solutions as part of a cross-functional team; developed
               quality software solutions for projects on-time; troubleshot,
