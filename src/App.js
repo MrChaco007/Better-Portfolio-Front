@@ -23,7 +23,7 @@ function App() {
   const [railsActive, setRailsActive] = React.useState(false);
   const [jsActive, setJsActive] = React.useState(false);
   const [expressActive, setExpressActive] = React.useState(false);
-  const url = "https://better-portfolio-back-61bcdab19e0d.herokuapp.com/projects/";
+  const url = "https://better-portfolio-back-61bcdab19e0d.herokuapp.com/projects";
   const getProjects = () => {
     fetch(url)
       .then((response) => response.json())
